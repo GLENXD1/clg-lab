@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flex.html">
+    <style>
+    
+    
+    </style>
+</head>
+<body>
+    <header>
+        <center>
+            <h1>Welcome to My Profile Page</h1>
+            <p>I'm <strong>Glen Xavier Dsouza</strong>, a 2nd-year Computer Science student studying at Dr. Ambedkar Institute of Technology.</p>
+        <button id="mode" >change mode</button></center>
+        </center>
+    </header>
+
+    <nav>
+        <center>
+            <a href="#contact"><button style="border-radius: 10px; padding: 10px 20px;">Contact</button></a>
+            <a href="#hobbies"><button style="border-radius: 10px; padding: 10px 20px;">Hobbies</button></a>
+        </center>
+       <center> <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+  
+   
+
+</ul></center>
+    </nav>
+
+    <section>
+        <center>
+            <img src="D:\student profile\my profile\download (1).jpg" alt="Profile picture" width="200">
+            <p>😊 Love to learn and explore 😊</p>
+        </center>
+    </section>
+
+    <article id="hobbies">
+        <h2>Hobbies:</h2>
+     <h1><ul>
+            <li>Cycling</li>
+            <li>Swimming</li>
+            <li>Gaming</li>
+            <li>Traveling</li>
+        </ul></h1>
+    </article>
+
+    <br><br><br>
+
+    <article id="contact">
+        <h2>Places Where You Can Contact Me:</h2>
+        <a href="https://www.youtube.com/" target="_blank">
+            <button style="border-radius: 10px; padding: 10px 20px;">YouTube</button></a>
+           
+            <a href="https://in.linkedin.com/" target="_blank">
+            <button style="border-radius: 10px; padding: 10px 20px;">linkdin</button></a>
+           
+            <a href="https://www.whatsapp.com/" target="_blank">
+            <button style="border-radius: 10px; padding: 10px 20px;">whatsapp</button>
+        </a>
+
+        <section>
+            <center>
+                <h3>Contact Form</h3>
+                <form action="#">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" id="message" rows="5" cols="30"></textarea><br><br>
+
+                    <input type="submit" value="Send">
+                </form>
+            </center>
+        </section>
+    </article>
+
+    <footer>
+        <p>This website is made by <b>GXD</b>.</p>
+    </footer>
+    <script>
+         let body = document.querySelector('body')
+ let mode = document.querySelector('#mode')
+let premode ='light'
+
+mode.addEventListener('click',() => {
+    if(premode == 'light'){
+        premode ='dark';
+        body.classList.add('dark');
+        body.classList.remove('light')
+    }
+    else{
+        premode ='light';
+         body.classList.add('light');
+        body.classList.remove('dark')
+    }
+ console.log(premode);
+})
+    </script>
+</body>
+</html>

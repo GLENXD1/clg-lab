@@ -1,0 +1,89 @@
+   body{
+    font-family: 'Courier New', Courier, monospace;
+           background-color: hsl(34, 13%, 24%);
+           color: rgb(224, 152, 101);
+
+   }
+   header{
+    color: #000;
+    background-color: rgb(248, 228, 139);
+    padding: 15px;
+   } 
+   
+   button {
+      background-color: rgb(235, 208, 134);
+      color: rgb(0, 0, 0);
+      border: none;
+      padding: 10px 20px;
+    
+
+    }
+     button:hover{
+        background-color: rgb(238, 178, 15);
+     }   
+     nav{
+         background-color: rgb(248, 228, 139);
+        padding: 15px;
+     }
+     nav a:hover{
+         text-decoration:underline ;
+        
+     }
+     section img 
+     {
+        padding-top: 10px;
+        display: block;
+        border-radius: 50%;
+        width: 400px;
+        height: 400px;
+        
+        
+        
+        
+        
+     }
+     article{
+             list-style: square;
+             padding: left 40px;
+             
+
+     }
+     form{
+        background-color: rgb(250, 217, 127);
+        text-align: left;
+       padding: 20px;
+       border-radius: 5%;
+       max-width: 300px;
+       align-self: center;
+     }
+    
+    footer {
+            text-align: center;
+            padding: 20px 10px;
+            background-color: #222;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 500px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+            article#contact > a {
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+            article#contact section {
+                margin: 20px 10px;
+            }
+        }
+            .dark{
+      background-color: rgb(34, 13%, 24%);
+      color: rgb(224, 152, 101);
+}
+.light{
+    background-color:rgb(231, 178, 141);
+    color: rgb(255, 90, 90);
+}
